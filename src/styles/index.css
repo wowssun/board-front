@@ -3,4 +3,20 @@ html, body, #root {
   padding: 0;
   height: 100%;
   width: 100%;
+  font-family: gmarketMediumm ;
+}
+
+@font-face {
+  font-family: "gmarketLight";         
+  src: url("../assets/fonts/GmarketSansTTFLight.ttf");
+}
+
+@font-face {
+  font-family: "gmarketMedium";
+  src: url("../assets/fonts/GmarketSansTTFMedium.ttf"); 
+}
+
+@font-face {
+  font-family: "gmarketBold";
+  src: url("../assets/fonts/GmarketSansTTFBold.ttf"); 
 }
