@@ -1,11 +1,9 @@
-import Layout from '@/components/Layout/Layout'
+import SectionHeader from '@/components/Header/SectionHeader'
 import React from 'react'
 
 const Home: React.FC = () => {
   return (
-    <Layout>
-     <div>메인</div>
-    </Layout>
+     <SectionHeader/>
   )
 }
 

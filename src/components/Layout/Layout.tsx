@@ -2,13 +2,14 @@ import React from 'react'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import '@/styles/index.css'
+import { Outlet } from 'react-router-dom'
 
-const Layout = (props : {children : React.ReactNode}) => {
+const Layout: React.FC = () => {
   return (
     <>
         <Header/>
             <main>
-                {props.children}
+                <Outlet/>
             </main>
         <Footer/>
     </>

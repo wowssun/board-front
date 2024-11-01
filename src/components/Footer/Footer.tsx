@@ -1,4 +1,3 @@
-import styles from '@components/Footer/Footer.module.css'
 const Footer: React.FC =() => {
   return (
     <footer className="border-t">

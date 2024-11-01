@@ -1,19 +1,16 @@
-'use client'
-
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import { useNavigate } from 'react-router-dom';
 
 export default function WriteButton() {
-    const { data: session } = useSession(); // 세션 정보 가져오기
-    const router = useRouter(); 
+
+     const navigate = useNavigate(); 
 
     const handleClick = () => {
-        if (!session) {
-          alert('회원만 작성할 수 있습니다.'); // 세션이 없으면 알림
-          return;
-        }
+        // if (!session) {
+        //   alert('회원만 작성할 수 있습니다.'); // 세션이 없으면 알림
+        //   return;
+        // }
 
-        router.push('/board/write');
+        navigate('/posts/write');
     }
 
     return (
